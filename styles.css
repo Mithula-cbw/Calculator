@@ -2,11 +2,14 @@
     --gray-100: white;
     --gray-200: rgb(216, 216, 216);
     --gray-300: rgb(168, 167, 167);
+    --gray-350: rgba(168, 167, 167, 0.322);
     --gray-400: rgb(89, 89, 89);
+    --gray-450: rgba(89, 89, 89, 0.192);
     --gray-500: rgb(26, 26, 26);
 
     --acc-100:rgb(255, 187, 0);
     --acc-200:rgb(255, 153, 0);
+    --acc-250:rgba(255, 153, 0, 0.671);
     --acc-300:rgb(255, 128, 0);
 
     /*
@@ -110,6 +113,7 @@ body{
     align-items: center;
     border-radius: 25px;
     opacity: 0.9;
+    cursor: pointer;
 }
 .theme:hover{
     opacity: 1;
@@ -138,7 +142,7 @@ body{
     background: none;
     border: none;
     outline: none;
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: right;
     padding: 10px;
     color: var(--display-text);
@@ -165,16 +169,24 @@ body{
     align-items: center;
     font-size: 1.3rem;
     font-weight: 400;
+    cursor: pointer;
 }
 
-.numbers{
+.bi-clock-history{
+    width: 28px;
+    height: 24px;
+}
+
+.number{
     color: var(--gray-500);
     font-family: "Source Sans 3", sans-serif;
+    transition: 0.1s ease-in-out;
 }
 
 .action , .operator{
     color: var(--acc-300);
     font-weight: 600;
+    font-family: "Source Sans 3", sans-serif;
 }
 
 .small{
@@ -185,9 +197,11 @@ body{
     font-size: 1.6rem;
 }
 
+
+
 .keys span{
    
-    box-shadow: 2px 4px 4px rgb(227, 227, 227);
+    box-shadow: 2px 4px 4px rgba(227, 227, 227, 0.62);
     width: 50px;
     height: 50px;
     display: flex;
@@ -196,6 +210,17 @@ body{
     border-radius: 50%;
     aspect-ratio: 1;
     
+    
+}
+
+.fill span{
+    background-color: var(--acc-200);
+    color: var(--gray-100);
+    transition: 0.1s ease-in ;
+}
+
+.fill span:hover{
+    background-color: var(--acc-300);
 }
 
 body.dark-theme .sun{
@@ -208,6 +233,11 @@ body.dark-theme .moon {
     width: 18px; 
     height: 18px;
     padding-left: 6px;
+    color: var(--gray-300);
+}
+
+body.dark-theme .butt {
+    background-color: var(--gray-300);
 }
 
 body.dark-theme .screen {
@@ -220,6 +250,7 @@ body.dark-theme body{
 
 body.dark-theme #display {
     color: var(--gray-200);
+    color: var(--gray-100);
 }
 
 body.dark-theme {
@@ -229,7 +260,31 @@ body.dark-theme {
 body.dark-theme .theme {
     justify-content: flex-start;
     background-color: var(--gray-500);
-    border: 2px solid var(--gray-300);
+    border: 2px solid var(--gray-350);
+}
+
+body.dark-theme .calculator-wrapper,
+body.dark-theme .calculator-wrapper .calculator {
+    background-color: var(--gray-500);
+}
+
+body.dark-theme .keys span{
+    box-shadow:none;
+    background-color: var(--gray-450);
+}
+
+body.dark-theme .number{
+    color: var(--gray-200);
+}
+
+body.dark-theme .action , 
+body.dark-theme .operator{
+    color: var(--acc-200);
+    font-weight: 400;
+}
+
+body.dark-theme .fill span{
+    background-color: var(--acc-250);
 }
 
 
