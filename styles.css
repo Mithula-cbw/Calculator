@@ -5,7 +5,7 @@
     --gray-350: rgba(168, 167, 167, 0.322);
     --gray-400: rgb(89, 89, 89);
     --gray-450: rgba(89, 89, 89, 0.192);
-    --gray-500: rgb(26, 26, 26);
+    --gray-500: rgb(12, 12, 12);
 
     --acc-100:rgb(255, 187, 0);
     --acc-200:rgb(255, 153, 0);
@@ -55,7 +55,7 @@ body{
     width: 100%;
     height: 100%;
     max-width: 320px;
-    max-height: 540px;
+    max-height: 560px;
     padding: 10px;
     background-color: var(--gray-100);
     box-shadow: 0px 0px 20px 1px var(--gray-400);
@@ -252,7 +252,7 @@ body.dark-theme .screen {
 }
 
 body.dark-theme body{
-    background-color: var(--gray-400);
+    background-color: var(--gray-500);
 }
 
 body.dark-theme #display {
@@ -296,9 +296,10 @@ body.dark-theme .fill span{
 
 @media (max-width:480px){
     .calculator-wrapper {
-        max-width: calc(100%);
+        max-width: calc(80%);
         max-height: calc(100%);
         min-width: 280px;
+        min-height: 540px;
         }
 
     .screen{
