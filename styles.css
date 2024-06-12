@@ -296,8 +296,8 @@ body.dark-theme .fill span{
 
 @media (max-width:480px){
     .calculator-wrapper {
-        max-width: calc(80%);
-        max-height: calc(100%);
+        max-width: calc(90%);
+        max-height: calc(90%);
         min-width: 280px;
         min-height: 540px;
         }
