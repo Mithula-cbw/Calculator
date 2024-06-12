@@ -294,6 +294,19 @@ body.dark-theme .fill span{
     background-color: var(--acc-250);
 }
 
+@media (max-width:480px){
+    .calculator-wrapper {
+        max-width: calc(100%);
+        max-height: calc(100%);
+        min-width: 280px;
+        }
+
+    .screen{
+         width: 100%;
+         height: 30%;   
+}
+}
+
 
 
 
