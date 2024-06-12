@@ -175,7 +175,13 @@ body{
 
 .bi-clock-history{
     width: 28px;
-    height: 24px;
+    height: 22px;
+}
+
+.bi-backspace{
+    width: 28px;
+    height: 20px;
+    padding-right: 4px;
 }
 
 .number{
