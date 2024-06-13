@@ -314,6 +314,20 @@ body.dark-theme .fill span{
 .number{
     font-size: 1.6rem;
 }
+
+.keys span{
+   
+    box-shadow: 2px 4px 4px rgba(227, 227, 227, 0.62);
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    
+    
+}
 }
 
 
