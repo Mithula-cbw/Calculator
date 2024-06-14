@@ -306,13 +306,11 @@ body.dark-theme .fill span{
 @media (max-width:480px){
   
     .calculator-wrapper{
-        width: 360px;
+        width: 400px;
         height: 720px;
     }
 
-    .menu-bar {
-       margin-top: 20px;
-    }
+    
 
     .screen{
         width: 100%;
@@ -323,5 +321,19 @@ body.dark-theme .fill span{
     font-size: 1.6rem;
 }
 
+}
+/*
+@media (max-height: 720px){
+    .calculator-wrapper{
+        width: 360px;
+        height: 640px;
+    }
+}
+*/
+@media (max-width: 400px){
+    .calculator-wrapper{
+        width: 340px;
+        height: 640px;
+    }
 }
 
