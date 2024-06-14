@@ -303,11 +303,11 @@ body.dark-theme .fill span{
     background-color: var(--acc-250);
 }
 
-@media (max-width:480px){
+@media (max-width:420px){
   
     .calculator-wrapper{
-        width: 400px;
-        height: 720px;
+        width: 100vw;
+        height: 100vh;
     }
 
     
@@ -331,9 +331,6 @@ body.dark-theme .fill span{
 }
 */
 @media (max-width: 400px){
-    .calculator-wrapper{
-        width: 340px;
-        height: 640px;
-    }
+    
 }
 
