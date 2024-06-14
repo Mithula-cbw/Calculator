@@ -308,6 +308,7 @@ body.dark-theme .fill span{
     .calculator-wrapper{
         width: 100vw;
         height: 100vh;
+        min-width: 300px;
     }
 
     
@@ -330,7 +331,5 @@ body.dark-theme .fill span{
     }
 }
 */
-@media (max-width: 400px){
-    
-}
+
 
